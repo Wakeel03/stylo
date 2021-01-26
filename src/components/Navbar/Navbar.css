@@ -1,0 +1,76 @@
+.Navbar{
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-color);
+}
+
+.navbar__items{
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Navbar logo*/
+
+.navbar__logo{
+    flex: 3;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/*Navbar tabs: Home, Past Paper and Calendar*/
+
+.navbar__tabs{
+    flex: 2;
+    display: flex;
+}
+
+.navbar__tab{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+.navbar__tab:last-child{
+    margin-right: 0;
+}
+
+.navbar__tab.active::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+/*Navbar actions: settings, notifications, user profile*/
+
+.navbar__actions{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__action{
+    color: #ffffff;
+    margin-right: 24px;
+}
+
+.navbar__action:first-child{
+    margin-left: auto;
+}
+
+.navbar__action:last-child{
+    margin-right: 0;
+    margin-left: auto;
+}

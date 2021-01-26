@@ -1,0 +1,140 @@
+.PastPaperPage{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.pastPaper__left_panel{
+    flex: 1;
+    padding-right: 24px;
+}
+
+.pastPaper__searchbar{
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: var(--grey-fade);
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+.pastPaper__searchbar:focus{
+    outline: none;
+}
+
+.pastPaper__list{
+    margin-top: 26px;
+}
+
+.pastPaper__item summary{
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.pastPaper__item summary p{
+    font-size: 20px;
+    color: var(--secondary-color);
+    overflow: hidden;
+}
+
+.pastPaper__item summary p::before{
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.pastPaper__dropdown_btn{
+    margin-left: auto;
+    color: var(--secondary-color);
+}
+
+.pastPaper__components{
+
+}
+
+.pastPaper__component{
+    background-color: var(--grey-fade);
+    width: 85%;
+    height: 28px;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-top: 12px;
+    margin-right: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pastPaper__component.active{
+    background-color: #ffffff;
+    border: var(--primary-color) 1px solid;
+}
+
+.pastPaper__component p{
+    color: var(--secondary-color);
+}
+
+
+/*Past Paper right panel with table data*/
+
+.pastPaper__right_panel{
+    flex: 3;
+    height: calc(100vh - 160px);
+    border-radius: 10px;
+    border: var(--grey-fade) 2px solid;
+    padding: 20px 40px;
+}
+
+.pastPaper__right_panel_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pastPaper__right_panel_header p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.pastPaper__right_panel table{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.pastPaper__right_panel table tr{
+    cursor: pointer;
+}
+
+.pastPaper__right_panel table tr:nth-child(even) {
+  background-color: var(--grey-fade);
+}
+
+.pastPaper__right_panel table th{
+    font-size: 18px;
+    height: 70px;
+    font-weight: 400;
+}
+
+.pastPaper__right_panel table td{
+    text-align: center;
+    font-size: 16px;
+    height: 70px;
+    font-weight: 300;
+}
+
+.pastPaper__details{
+    height: 250px;
+    background-color: aqua;
+}
