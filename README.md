@@ -72,3 +72,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ###Installations/Requirements
 1. npm install react-icons --save
+2. npm install firebase -g firebase-tools
+--> firebase login
+--> firebase init
+--> npm i firebase
+--> firebase deploy
