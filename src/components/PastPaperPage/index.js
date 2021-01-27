@@ -31,11 +31,27 @@ function PastPaperPage() {
                 </div>
             </div>
 
+            <div className="pastPaper__modal">
+                <div className="pastPaper__modal_form">
+                    <form>
+                        <label>Enter a name</label>
+                        <input placeholder="Name" />
+                        <div className="pastPaper__modal_actions">
+                            <button className="btn primary">Add</button>
+                            <button className="btn danger">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
             <div className="pastPaper__right_panel">
                 <div className="pastPaper__right_panel_header">
                     <p>Paper 2</p>
-                    <button className="btn-2x primary">+ New</button>
+                    <div className="pastPaper__right_panel_actions">
+                        <button className="btn-2x save">Save</button>
+                        <button className="btn-2x danger">Cancel</button>
+                        <button className="btn-2x primary">+ New</button>
+                    </div>
                 </div>
 
                 <hr />
@@ -56,7 +72,29 @@ function PastPaperPage() {
                         <td>93</td>
                     </tr>
                     <tr className="pastPaper__details">
-                        <td colSpan="5"><p>Description</p></td>
+                        <td colSpan="5">
+                            <div className="pastPaper__details_content">
+                                <div className="pastPaper__details_row">
+                                    <label>Year</label>
+                                    <input value="2020" />
+                                    <label>Session</label>
+                                    <input value="Summer" />
+                                    <label>Variant</label>
+                                    <input value="2" />
+                                </div>
+                                <div className="pastPaper__details_row">
+                                    <label>Time</label>
+                                    <input value="1 h 25" />
+                                    <label>Marks</label>
+                                    <input value="93" />
+                                </div>
+                                <div className="pastPaper__details_notes">
+                                    <label>Notes</label>
+                                    <textarea rows="10" cols="50"></textarea>
+                                </div>
+                            </div>
+                            
+                        </td>
                     </tr>
                 </table>
             </div>
