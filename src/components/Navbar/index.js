@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 import { FiSettings } from 'react-icons/fi'
 import { MdNotificationsNone } from 'react-icons/md'
 import { FaRegUserCircle } from 'react-icons/fa'
 
 function Navbar() {
+
     return (
         <nav className="Navbar">
             <div className="navbar__items">
